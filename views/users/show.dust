@@ -1,0 +1,15 @@
+{>"layout" /}
+
+{<mainBlock}
+    <h1>{user.name}</h1>
+    <div>
+        <p>{user.phone} / {user.email}</p>
+        <p>
+           <a href="/users/{user.name}/edit">Update</a>
+            <form action="/users/{user.name}" method="POST">
+                <input type="hidden" name="_method" value="DELETE">
+                <button>Delete</button>
+            </form> 
+        </p>
+    </div>
+{/mainBlock}

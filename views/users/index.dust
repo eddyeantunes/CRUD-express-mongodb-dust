@@ -1,0 +1,17 @@
+{>"layout" /}
+
+{<mainBlock}
+    <h1>All Contacts</h1>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="list-group">
+                {#users}
+                <a href="/users/{name}" class="list-group-item">
+                  {name} - {phone}
+                </a>
+                {/users}
+            </div>
+        </div>
+    </div>
+{/mainBlock}

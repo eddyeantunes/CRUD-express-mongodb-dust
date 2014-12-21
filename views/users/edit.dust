@@ -1,0 +1,12 @@
+{>"layout" /}
+
+{<mainBlock}
+    <h1>Edit User</h1>
+    <form action="/users/{user.name}" method='post'>
+        <input type="hidden" name="_method" value="PUT">
+        <p>Name: <input id="name" type="text" name="name" value='{user.name}'></p>
+        <p>Email: <input id="email" type="text" name="email" value='{user.email}'></p>
+        <p>Phone: <input id="phone" type="text" name="phone" value='{user.phone}'></p>
+        <button>Update</button>
+    </form>
+{/mainBlock}
