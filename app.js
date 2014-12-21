@@ -36,7 +36,7 @@ if ('development' == app.get('env')) {
 // Database config
 var db_url;
 var localDb = "mongodb://localhost/storedata";
-var liveDb = "mongodb://printvoid:nodecrud@ds012345.mongolab.com:63869/nodecrud";
+var liveDb = "mongodb://<dbuser>:<dbpassword>@ds029051.mongolab.com:29051/kesav";
 db_url = (env === 'development') ? localDb : liveDb;
 mongoose.connect(db_url);
 
