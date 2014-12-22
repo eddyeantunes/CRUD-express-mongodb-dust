@@ -10,8 +10,16 @@
 </head>
 <body>
     <div class="container">
-        <a href="/users">Show All </a> | <a href="/users/new">Add Contact</a>
-        <br/>
+
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="/users">
+                Address Book
+              </a>
+            </div>
+          </div>
+        </nav>
 
         {+mainBlock /}
     </div>    

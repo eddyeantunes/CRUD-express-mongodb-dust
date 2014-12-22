@@ -1,15 +1,22 @@
 {>"layout" /}
 
 {<mainBlock}
-    <h1>{user.name}</h1>
-    <div>
-        <p>{user.phone} / {user.email}</p>
-        <p>
-           <a href="/users/{user.name}/edit">Update</a>
-            <form action="/users/{user.name}" method="POST">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{user.name}</h3>
+        </div>
+        <div class="panel-body">
+            <p>Phone: {user.phone}</p>
+            <p>Email: {user.email}</p>
+        </div>
+        <div class="panel-footer clearfix">
+            <a href="/users/{user.name}/edit" class="pull-right btn btn-primary">Update</a>
+            <a class="pull-left btn " href="/users">Cancel</a>
+            <form action="/users/{user.name}" method="POST" class="pull-left">
                 <input type="hidden" name="_method" value="DELETE">
-                <button>Delete</button>
+                <button class="btn btn-danger">Delete</button>
             </form> 
-        </p>
+        </div>
     </div>
+    
 {/mainBlock}
